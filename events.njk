@@ -1,0 +1,12 @@
+---
+layout: my_basic_layout
+---
+
+{% for event in facebook_data %}
+  <section>
+    <h2>{{event.name}} @ {{event.readableStartTime}} - {{event.readableEndTime}}</h2>
+    <p>
+    {{event.description}}
+    <p>
+  </section>
+{% endfor %}

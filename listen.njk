@@ -1,0 +1,36 @@
+---
+layout: my_basic_layout
+---
+
+<h1>Listen</h1>
+
+<!-- Step 1:
+
+<h2>Live at the Sweet Corn Festival</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9I7QqVdv0xU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2>Live at the Iron Post</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eOIYDXF0ZMc?start=41" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+-->
+
+<!--
+Step 2
+
+{% Video {
+    title: 'Live at the Sweet Corn Festival', 
+    id: '9I7QqVdv0xU'
+} %}
+
+{% Video {
+    title: 'Live at the Iron Post', 
+    id: 'eOIYDXF0ZMc',
+    timestamp: 41
+} %}
+
+-->
+
+<!-- Step 3 -->
+{% for val in youtube_data %}
+  {% Video val %}
+{% endfor %}

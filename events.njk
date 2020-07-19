@@ -4,7 +4,7 @@ layout: my_basic_layout
 
 {% for event in facebook_data %}
   <section>
-    <h2>{{event.name}} @ {{event.readableStartTime}} - {{event.readableEndTime}}</h2>
+    <h2>{{event.name}} @ {{event.start_time}} - {{event.end_time}}</h2>
     <p>
     {{event.description}}
     <p>
